@@ -1,0 +1,119 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;700&display=swap');
+
+body{
+    background-color:white ;
+    font-family: 'Roboto Mono', monospace;
+    width: 100vh;
+    overflow: hidden;
+}
+li{
+    list-style: none;
+}
+
+.faire{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column wrap;
+    padding: 25px;
+}
+.faire p{
+    text-align: justify;
+}
+.bip{
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #F4B860;
+    border: none;
+    cursor: pointer;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.bip:hover{
+    background-color: #fb9e11;
+}
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: black;
+    width: 500px;
+    background-color:white ;
+    justify-content: center;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    display:none;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow:0 2px 0 #F4B860 ,02px 20px 40px rgba(0, 0, 0, 0.39);
+}
+.modal-title{
+    background-color: #F4B860;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 490px;
+    height: 60px;
+    padding: 5px;
+    border-bottom: 1px dashed;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+   
+}
+
+
+.iconeclose{
+    background-color: #AF3140;
+    padding:2px 7px 2px 7px;
+    position: absolute;
+    right: 15;
+    top:15;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.modal-content{
+    height: 300px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+  
+}
+.modal-content ul{
+    display: flex;
+    flex-flow:column nowrap;
+    height: 200px;
+    justify-content: space-around;
+    align-items: flex-start;
+    
+}
+.modal-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    align-self: center;
+    width: 500px;
+}
+.closebtn{
+    background-color: #F4B860;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: 0 3px 0 #F4D6CC,inset 0px 2px 0px #f0c9bc ;
+    transition: 0.4s ease-in ;
+    
+}
+.closebtn:hover{
+    background-color:#E2E2E2 ;
+    box-shadow:inset 0 3px 5px rgba(0, 0, 0, 0.233)
+}

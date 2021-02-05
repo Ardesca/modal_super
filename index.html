@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super modal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+<div class="faire">
+<h1>Lorem Ipsum</h1>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat delectus non ipsum cumque nostrum aliquam quasi reiciendis, ipsam provident perferendis repudiandae in error illo vitae id est dignissimos, nam aspernatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis rem debitis delectus rerum fuga quo. Quam, minus excepturi ab labore maxime facilis tempora obcaecati quasi, id accusantium, velit placeat ad?</p>
+<button type="button" onclick="openThis();" class="bip"> Open me </button>
+</div>
+<div class="modal">
+    <div class="modal-title">
+        <h3>My project</h3><span onclick="closeThis()" class="iconeclose"> X </span>
+    </div>
+    <div class="modal-content">
+        <ul>
+            <li>
+                <input type="checkbox" id="other" value="other" class="other">
+                <span for="other" type="text" id="otherValue" name="other">Find your background</span>
+            </li>
+            <li>
+                <input type="checkbox" id="other" value="yo">
+                <span for="other" type="text" id="yoValue" name="other">Style your button</span>
+            </li>
+            <li>
+                <input type="checkbox" id="other" value="zer">
+                <span for="other" type="text" id="zerValue" name="other">Write your own JS</span>
+            </li>            
+        </ul>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" onclick="closeThis();" class="closebtn"> See you  </button>
+    </div>
+</div>
+
+
+
+<script src="main.js"></script>
+</body>
+</html>
